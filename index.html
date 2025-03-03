@@ -23,25 +23,89 @@
 
 <body class="bg-gray-900 text-white">
     
-    <!-- Navigation Bar -->
-    <nav class="p-4 bg-gray-800 shadow-md flex justify-between items-center">
-        <h1 class="text-xl font-bold">📊 My Data Portfolio</h1>
-        <div class="space-x-4">
-            <a href="#projects" class="hover:text-blue-400">Projects</a>
-            <a href="#about" class="hover:text-blue-400">About</a>
-            <a href="#contact" class="hover:text-blue-400">Contact</a>
-        </div>
-    </nav>
+  
+ 
     
-    <!-- Hero Section -->
-    <header class="text-center py-20">
-        <h2 class="text-4xl font-extrabold">Hello, I'm a Data Analyst</h2>
+    <!-- Header -->
+    <header class="page-header text-center py-20">
+      <div class="container header-container">
+
+        <!-- Navigation Bar -->
+        <nav class="p-4 bg-gray-800 shadow-md flex justify-between items-center">
+          <h1 class="text-xl font-bold">📊 My Data Portfolio</h1>
+          <div class="space-x-4">
+              <a href="#projects" class="hover:text-blue-400">Projects</a>
+              <a href="#about" class="hover:text-blue-400">About</a>
+              <a href="#contact" class="hover:text-blue-400">Contact</a>
+          </div>
+        </nav>
+
+        <h2 class="toast text-4xl font-extrabold">Hello, I'm a Data Analyst</h2>
         <p class="text-lg text-gray-400 mt-4">Turning raw data into meaningful insights.</p>
         <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600">View Projects</a>
+      </div>
+<div class="container header-container">
+        <nav class="header-nav">
+          <img
+            src="logo.jpg"
+            alt="DashBored logo"
+            width="40"
+            height="40"
+            alt="DashBored Logo"
+          />
+          <a class="logo header-logo" href="./index.html"
+            >Dash<span class="logo-part">Bored</span>
+          </a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link current">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a href="./dashboard.html" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a href="./analysis.html" class="nav-link">Analysis</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com"
+                >honchar.analytics@gmail.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+48733793430"
+                >+48 733-793-430</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+
     </header>
+    
+    <main>
+    <button type="button" class="analyst-chat-btn">Contact analyst</button>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero-section">
+        <div class="container">
+          <div class="hero">
+            <h1 class="hero-title">Rent vs. Buy: Data Analysis</h1>
+            <p class="hero-text">
+              This repository holds all the Excel files necessary to accompany
+              my first project: Buy vs Rent Dashboard for Poland ⚖️!
+            </p>
+          </div>
+        </div>
+      </section>
     
     <!-- Featured Projects -->
     <section id="projects" class="p-10 text-center">
+      <div class="container">
         <h3 class="text-2xl font-bold mb-6">Featured Projects</h3>
         <div class="grid md:grid-cols-2 gap-6">
             <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
@@ -53,6 +117,7 @@
                 <p class="text-gray-400 mt-2">Designing a PostgreSQL database to manage restaurant operations and analyze performance metrics.</p>
             </div>
         </div>
+      </div>
     </section>
 
      <section class="portfolio">
@@ -68,14 +133,12 @@
                   height="200"
                 />
                 <p class="overlay">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  Analyzing the Polish apartment market to compare renting and buying options using data-driven insights
                 </p>
               </div>
               <div class="name-type">
-                <h3 class="portfolio-list-title">Banking App</h3>
-                <p class="portfolio-list-text">App</p>
+                <h3 class="portfolio-list-title">Buy vs. Rent Dashboard</h3>
+                <p class="portfolio-list-text">Excel</p>
                 <a class="dropdown link-to-project" href="./index.html">Discover ></a>
               </div>
               
@@ -89,14 +152,13 @@
                   height="200"
                 />
                 <p class="overlay">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  Designing a PostgreSQL database to manage restaurant operations and analyze performance metrics
                 </p>
               </div>
               <div class="name-type">
-                <h3 class="portfolio-list-title">Cashless Payment</h3>
-                <p class="portfolio-list-text">Marketing</p>
+                <h3 class="portfolio-list-title">Restaurant Database</h3>
+                <p class="portfolio-list-text">SQL</p>
+                <a class="dropdown link-to-project" href="./index.html">Discover ></a>
               </div>
             </li>
             <li class="portfolio-list-item">
@@ -116,6 +178,7 @@
               <div class="name-type">
                 <h3 class="portfolio-list-title">Meditation App</h3>
                 <p class="portfolio-list-text">App</p>
+                <a class="dropdown link-to-project" href="./index.html">Discover ></a>
               </div>
             </li>
             <li class="portfolio-list-item">
@@ -135,16 +198,20 @@
               <div class="name-type">
                 <h3 class="portfolio-list-title">Taxi Service</h3>
                 <p class="portfolio-list-text">Marketing</p>
+                <a class="dropdown link-to-project" href="./index.html">Discover ></a>
               </div>
             </li>
           </ul>
         </div>
       </section>
+    </main>
     
     <!-- Contact Section -->
     <footer id="contact" class="text-center p-6 bg-gray-800 mt-10">
+      <div class="container">
         <p class="text-gray-400">Get in touch: <a href="mailto:your.email@example.com" class="text-blue-400 hover:underline">honchar.analytics@gmail.com</a></p>
         <p class="text-gray-500 mt-2">© 2025 Oleksandr Honchar</p>
+      </div>
     </footer>
     
 </body>
